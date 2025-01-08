@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
-
+import { RouterOutlet, RouterLink } from '@angular/router';
 @Component({
-  selector: 'app-main-buttons',
-  imports: [MatIconModule],
-  templateUrl: './main-buttons.component.html',
-  styleUrl: './main-buttons.component.css',
+  selector: 'app-main-page',
+  imports: [MatIconModule, RouterOutlet, RouterLink],
+  templateUrl: './main-page.component.html',
+  styleUrl: './main-page.component.css',
 })
-export class MainButtonsComponent {
+export class MainPageComponent {
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon(
       "objects",

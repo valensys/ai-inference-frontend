@@ -1,0 +1,27 @@
+.navigation-button {
+  width: 120px !important;
+  height: 120px !important;
+  padding: 120px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-icon
+{
+    width: 140px;
+    height: 140px;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.greeting-header, .greeting-text{
+    text-align: center;
+}
+
+.area-navigation {
+    display: flex;
+    justify-content: center;
+}
