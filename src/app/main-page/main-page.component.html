@@ -1,0 +1,18 @@
+<section class="section-greeting">
+    <p class="greeting-header">Welcome to AI Multitool!</p>
+    <p class="greeting-text">Choose your option below</p>
+</section>
+
+<nav class="area-navigation">
+    <button mat-button routerLink="/object-detection" class="navigation-button">
+        <mat-icon svgIcon="objects"></mat-icon>
+    </button>
+    <button mat-button routerLink="/skeleton-detection" class="navigation-button">
+        <mat-icon svgIcon="skeleton"></mat-icon>
+    </button>
+    <button mat-button routerLink="/ai-chat" class="navigation-button">
+        <mat-icon svgIcon="chat" routerLink="/ai-chat"></mat-icon>
+    </button>
+</nav>
+
+<router-outlet></router-outlet>
